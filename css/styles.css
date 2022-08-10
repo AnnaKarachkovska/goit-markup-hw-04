@@ -156,9 +156,20 @@ body {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+
+    text-align: center;
     
     background-color: var(--background-color-dark);
-    text-align: center;
+
+    background-image: 
+    linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 1600px 600px;
 }
 
 .hero-title {
@@ -192,6 +203,11 @@ body {
     border-radius: 4px;
     border: none;
 }
+
+.hero .btn:active {
+    background-color: #188CE8;
+}
+
 
 /* Features */
 .features {
@@ -295,6 +311,10 @@ body {
     color: var(--text-color);
 }
 
+.team-social-list {
+    display: flex;
+}
+
 /* Footer */
 footer {
     margin-top: 0;
@@ -330,6 +350,14 @@ footer {
 
 .footer-list .contacts {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-text {
+    color: var(--white);
+}
+
+.footer-social-list {
+    display: flex;
 }
 
 
@@ -384,6 +412,13 @@ footer {
     border: 1px solid var(--border);
 }
 
+.cards .item:hover,
+.cards .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .cards .box {
     padding: 20px 24px;
 }
@@ -409,3 +444,4 @@ footer {
 .cards .text {
     margin: 0;
 }
+
