@@ -234,34 +234,25 @@ body {
     margin-bottom: 30px;
 
     background-color: var(--background-color-light);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
 }
 
 .item-antenna::before {
-    content: "";
-    background-image: url('../images/icons-features/antenna.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../images/icons-features/antenna.svg');
 }
 
 .item-clock::before {
-    content: "";
-    background-image: url('../images/icons-features/clock.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../images/icons-features/clock.svg');
 }
 
 .item-diagram::before {
-    content: "";
-    background-image: url('../images/icons-features/diagram.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../images/icons-features/diagram.svg');
 }
 
 .item-astronaut::before {
-    content: "";
-    background-image: url('../images/icons-features/astronaut.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../images/icons-features/astronaut.svg');
 }
 
 .features-list {
@@ -353,12 +344,21 @@ body {
 }
 
 /* Footer */
-footer {
+.footer {
     margin-top: 0;
     padding-top: 60px;
     padding-bottom: 60px;
-    
+
     background-color: var(--background-color-dark);
+}
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-address {
+    margin-right: 70px;
 }
 
 .logo-footer {
@@ -390,6 +390,11 @@ footer {
 }
 
 .footer-text {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
     color: var(--white);
 }
 
@@ -397,6 +402,50 @@ footer {
     display: flex;
 }
 
+.footer-social-list .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-list .item {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    
+    background-color: rgba(255, 255, 255, 0.1);;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+.icon-instagram {
+    background-image: url('../images/icons-footer/instagram.svg');
+}
+
+.icon-twitter {
+    background-image: url('../images/icons-footer/twitter.svg');
+}
+
+.icon-facebook {
+    background-image: url('../images/icons-footer/facebook.svg');
+}
+
+.icon-linkedin {
+    background-image: url('../images/icons-footer/linkedin.svg');
+}
+
+.icon-instagram:focus,
+.icon-instagram:hover,
+.icon-twitter:focus,
+.icon-twitter:hover,
+.icon-facebook:focus,
+.icon-facebook:hover,
+.icon-linkedin:focus,
+.icon-linkedin:hover {
+    background-color: var(--accent-color);
+}
 
 /* Стилі для portfolio.html */
 .filter {
