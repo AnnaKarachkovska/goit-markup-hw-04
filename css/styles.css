@@ -134,15 +134,7 @@ body {
     color: var(--main-text-color);
 }
 
-.header-contacts {
-    display: flex;
-}
-
-.header-contacts .item + .item {
-    margin-left: 50px;
-}
-
-.header-contacts .link {
+.hd-contacts-link {
     color: var(--text-color);
 }
 
@@ -153,6 +145,25 @@ body {
 
 .header-nav .is-active {
     color: var(--accent-color);
+}
+
+.header-contacts {
+    display: flex;
+}
+
+.header-contacts .item + .item {
+    margin-left: 50px;
+}
+
+.header-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.hd-contacts-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Hero */
@@ -333,6 +344,34 @@ body {
 
 .team-social-list {
     display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-social-list .item {
+    box-shadow: none;
+}
+
+.team-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.team-link:hover,
+.team-list:focus {
+    background-color: var(--accent-color);
+}
+
+.team-icon {
+    width: 20px;
+    height: 20px;
 }
 
 /* Clients */
@@ -414,8 +453,6 @@ body {
 }
 
 .footer-social-list {
-    padding: 0;
-
     display: flex;
     gap: 10px;
 }
@@ -430,6 +467,11 @@ body {
     
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-color);
 }
 
 .footer-icon {
