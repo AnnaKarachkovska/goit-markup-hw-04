@@ -156,8 +156,12 @@ body {
 }
 
 .header-icon {
-    width: 16px;
-    height: 16px;
+    fill: var(--text-color);
+}
+
+.hd-contacts-link:hover .header-icon,
+.hd-contacts-link:focus .header-icon {
+    fill: var(--accent-color);
 }
 
 .hd-contacts-link {
@@ -170,8 +174,11 @@ body {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 
     text-align: center;
+    max-width: 1600px;
     
     background-color: var(--background-color-dark);
 
@@ -181,9 +188,9 @@ body {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), 
         url(../images/hero-bg.jpg);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: 1600px 600px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+   /* background-size: 1600px 600px; */
 }
 
 .hero-title {
@@ -345,6 +352,7 @@ body {
 .team-social-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -370,8 +378,12 @@ body {
 }
 
 .team-icon {
-    width: 20px;
-    height: 20px;
+    fill: var(--icon);
+} 
+
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
+    fill: var(--white);
 }
 
 /* Clients */
@@ -393,8 +405,17 @@ body {
 }
 
 .clients-icon {
-    width: 106px;
-    height: 60px;
+    fill: var(--icon);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--accent-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-color);
 }
 
 /* Footer */
@@ -475,8 +496,7 @@ body {
 }
 
 .footer-icon {
-    width: 20px;
-    height: 20px;
+    fill: var(--white);
 }
 
 /* Стилі для portfolio.html */
